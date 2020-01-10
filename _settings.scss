@@ -1,0 +1,26 @@
+//
+// Settings
+//
+
+$baseline         : 4px;
+$base             : 16;
+
+$size-1           : $baseline;
+$size-2           : $baseline * 2; // 8px
+$size-3           : $baseline * 3; // 12px
+$size-4           : $baseline * 4; // 16px
+$size-5           : $baseline * 5; // 20px
+$size-6           : $baseline * 6; // 24px
+$size-7           : $baseline * 7; // 28px
+$size-8           : $baseline * 8; // 32px
+$size-9           : $baseline * 9; // 36px
+$size-10          : $baseline * 10; // 40px
+
+$types: (
+  'canon'         : $size-8,
+  'paragon'       : $size-7,
+  'doublepica'    : $size-6,
+  'columbian'     : $size-5,
+  'primer'        : $size-4,
+  'pica'          : $size-3 
+);
