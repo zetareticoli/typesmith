@@ -1,0 +1,22 @@
+//
+// Tools
+//
+
+@function rem($value) {
+  $rem-value: $value / #{$base}; 
+  @return #{$rem-value}rem;
+}
+
+@each $type, $size in $types {
+  .#{$type} {
+    font-size: rem($size);
+  }
+}
+
+@function type-value($type) {
+  @return map-get($types, $type);
+}
+
+@mixin type($type) {
+  font-size: type-value($type);
+}
