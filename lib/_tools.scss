@@ -2,21 +2,29 @@
 // Tools
 //
 
+// Px to Rem
+// Convert any size expressed in 'px' to 'rem'
 @function rem($value) {
   $rem-value: $value / #{$base}; 
   @return #{$rem-value}rem;
 }
 
+// Return type-value from types map
+@function type-value($type) {
+  @return map-get($types, $type);
+}
+
+// Generate type class-names from map
+// Dependency: @function rem 
 @each $type, $size in $types {
   .#{$type} {
     font-size: rem($size);
   }
 }
 
-@function type-value($type) {
-  @return map-get($types, $type);
-}
-
+// Type mixin
+// Apply specific font-size using types names
+// Dependency: @function type-value
 @mixin type($type) {
   font-size: type-value($type);
 }
