@@ -1,4 +1,4 @@
-# swash
+# typesmith
 Responsive typography system
 
 ## How to use
@@ -7,7 +7,7 @@ Responsive typography system
 Download the file located in /dist/ folder choosing between default or minified version. Include in your project as normal CSS file.
 
 ### Include in your project
-Download the _swash.scss file and move it in your sass/scss folder.
+Download the _typesmith.scss file and move it in your sass/scss folder.
 
 
 ## License
