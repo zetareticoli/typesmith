@@ -1,4 +1,8 @@
 // TYPESMITH
 // @author Francesco Improta
 
+// Import mq library in order to compile css files that work
+@import '../node_modules/sass-mq-lib/mq.scss';
+
+// Load typesmith
 @import '../_typesmith.scss';
