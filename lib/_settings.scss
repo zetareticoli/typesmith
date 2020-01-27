@@ -15,21 +15,32 @@ $base: 16px;
 $types: (
   'canon': (
     'base': 36px,
-    'small': 32px),
+    'small': 32px
+    ),
   'doublepica': (
     'base': 32px,
-    'small': 28px),
+    'small': 28px
+    ),
   'paragon': (
     'base': 28px,
-    'small': 26px),
+    'small': 26px
+    ),
   'columbian': (
-    'base': 24px),
+    'base': 24px
+    ),
   'primer': (
-    'base': 20px),
+    'base': 20px
+    ),
+  'bodycopy': (
+    'base': 18px
+  ),
   'pica': (
-    'base': 16px),
+    'base': 16px
+    ),
   'brevier': (
-    'base': 14px),
+    'base': 14px
+    ),
   'minion': (
-    'base': 12px)
+    'base': 12px
+    )
 );
