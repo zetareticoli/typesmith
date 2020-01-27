@@ -1,0 +1,27 @@
+{
+  "name": "typesmith",
+  "version": "1.0.0",
+  "description": "Responsive typgography system",
+  "main": "_typesmith.scss",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zetareticoli/typesmith.git"
+  },
+  "keywords": [
+    "sass",
+    "typography",
+    "css"
+  ],
+  "author": "francesco improta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zetareticoli/typesmith/issues"
+  },
+  "homepage": "https://github.com/zetareticoli/typesmith#readme"
+}
