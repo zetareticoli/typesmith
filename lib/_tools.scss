@@ -1,30 +1,40 @@
-//
-// Tools
-//
+// TYPESMITH TOOLS
+// @author Francesco Improta
 
 // Px to Rem
 // Convert any size expressed in 'px' to 'rem'
 @function rem($value) {
-  $rem-value: $value / #{$base}; 
+  $rem-value: $value / $base;
   @return #{$rem-value}rem;
 }
 
-// Return type-value from types map
-@function type-value($type) {
-  @return map-get($types, $type);
+// Return type value from types map, specifying what $size you need
+@function type-size($type, $size) {
+  @return map-get(map-get($types, $type), $size);
 }
 
-// Generate type class-names from map
-// Dependency: @function rem 
-@each $type, $size in $types {
-  .#{$type} {
-    font-size: rem($size);
+// Resposive type size based on type map values - media query is defined in it, not editable
+@mixin type-size($type) {
+  $size-small-px: type-size($type, small);
+  $size-base-px: type-size($type, base);
+
+  @if map-has-key(map-get($types, $type), small) {
+    font-size: rem($size-small-px);
+
+    @include bp(medium) {
+      font-size: rem($size-base-px);
+    }
   }
+  @else {
+    font-size: rem($size-base-px);
+  }
+
+  line-height: calc(1em + #{$baseline});
 }
 
-// Type mixin
-// Apply specific font-size using types names
-// Dependency: @function type-value
-@mixin type($type) {
-  font-size: type-value($type);
+// Loop throught types map printing classnames based on type names
+@each $type, $sizes in $types {
+  .#{$type} {
+    @include type-size($type)
+  }
 }
