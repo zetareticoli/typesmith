@@ -26,7 +26,7 @@ Download the file located in /dist/ folder choosing between default or minified 
 
 ## Dependencies
 I order to use the libary you will need following tools:
-- [MQ](https://github.com/zetareticoli/mq)
+- [mq](https://github.com/zetareticoli/mq)
 
 
 ## License
