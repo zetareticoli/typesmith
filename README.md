@@ -5,11 +5,11 @@ Responsive typography system
 
 ### Install via NPM
 
-``` bash
+```bash
 npm install --save typesmith-lib`
 ```
 
-``` sass
+```scss
 // your-project/style.scss
 @import 'node_modules/mq/mq';
 @import 'node_modules/typesmith/typesmith';
