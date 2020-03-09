@@ -6,7 +6,7 @@ Responsive typography system
 ### Install via NPM
 
 ``` bash
-npm install --save typesmith`
+npm install --save typesmith-lib`
 ```
 
 ``` sass
