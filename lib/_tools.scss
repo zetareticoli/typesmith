@@ -21,7 +21,7 @@
   @if map-has-key(map-get($types, $type), small) {
     font-size: rem($size-small-px);
 
-    @include bp(medium) {
+    @include bp(md) {
       font-size: rem($size-base-px);
     }
   }
