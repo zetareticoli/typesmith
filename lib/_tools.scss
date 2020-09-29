@@ -24,8 +24,7 @@
     @include bp(md) {
       font-size: rem($size-base-px);
     }
-  }
-  @else {
+  } @else {
     font-size: rem($size-base-px);
   }
 
@@ -33,8 +32,9 @@
 }
 
 // Loop throught types map printing classnames based on type names
-@each $type, $sizes in $types {
-  .#{$type} {
-    @include type-size($type)
-  }
-}
+// Remove // to enable classes
+// @each $type, $sizes in $types {
+//   .#{$type} {
+//     @include type-size($type)
+//   }
+// }
