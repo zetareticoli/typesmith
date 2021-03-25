@@ -5,10 +5,18 @@
 // Global settings
 //
 
-$baseline: 4px;
-$base: 16px;
-$bodycopy: 18px;
+// Base font-size serves @rem function for px to rem calculation
 
+$base-font-size: 16px;
+
+// Default options for Vertical Rhythm
+// Change these default in your project by overriding it in your settings
+
+:root {
+  --baseline: 4px;
+  --ratio: 1.25;
+}
+  
 //
 // Types map
 //
@@ -17,31 +25,31 @@ $types: (
   'canon': (
     'base': 36px,
     'small': 32px
-    ),
+  ),
   'doublepica': (
     'base': 32px,
     'small': 28px
-    ),
+  ),
   'paragon': (
     'base': 28px,
     'small': 26px
-    ),
+  ),
   'columbian': (
     'base': 24px
-    ),
+  ),
   'primer': (
     'base': 20px
-    ),
+  ),
   'english': (
     'base': 18px
   ),
   'pica': (
     'base': 16px
-    ),
+  ),
   'brevier': (
     'base': 14px
-    ),
+  ),
   'minion': (
     'base': 12px
-    )
+  )
 );
