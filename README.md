@@ -6,7 +6,7 @@ Responsive typography system
 ### Install via NPM
 
 ```bash
-npm install --save typesmith-lib`
+npm i --save typesmith-lib`
 ```
 
 ```scss
@@ -15,19 +15,17 @@ npm install --save typesmith-lib`
 @import 'node_modules/typesmith/typesmith';
 ```
 
-### Install manually
+### Manual
 
 #### Using @import
-Download the _typesmith.scss file and move it in your sass/scss folder. You need a Sass @import to include it in your project.
+Download the `_typesmith.scss` file and move it in your sass/scss folder. You need a Sass `@import` to include it in your project. Choose this way in order to customize **typesmith** according to project needs.
 
-#### Add CSS file
-Download the file located in /dist/ folder choosing between default or minified version. Include in your project as normal CSS file.
-
+#### Add CSS files
+Download the files located in /dist/ folder choosing between default or minified version. Include them in your project as normal CSS files. In this case you couldn't customize typography values but use those by default.
 
 ## Dependencies
 I order to use the libary you will need following tools:
 - [mq](https://github.com/zetareticoli/mq)
-
 
 ## License
 MIT License
