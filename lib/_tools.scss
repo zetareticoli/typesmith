@@ -3,12 +3,14 @@
 
 // Px to Rem
 // Convert any size expressed in 'px' to 'rem'
+
 @function rem($value) {
-  $rem-value: $value / $base;
+  $rem-value: $value / $base-font-size;
   @return #{$rem-value}rem;
 }
 
 // Return type value from types map, specifying what $size you need
+
 @function type-size($type, $size) {
   @return map-get(map-get($types, $type), $size);
 }
@@ -33,11 +35,3 @@
     line-height: calc(1em * var(--ratio));
   }
 }
-
-// Loop throught types map printing classnames based on type names
-// Remove // to enable classes
-// @each $type, $sizes in $types {
-//   .#{$type} {
-//     @include type-size($type)
-//   }
-// }
