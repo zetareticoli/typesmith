@@ -1,7 +1,7 @@
 # typesmith
 Responsive typography system
 
-[![npm Version](https://img.shields.io/npm/v/typesmith-lib?style=flat-square)] ![GitHub top language](https://img.shields.io/github/languages/top/zetareticoli/typesmith?style=flat-square) [![npm Downloads](https://img.shields.io/npm/dt/typesmith-lib?logo=npm&style=flat-square)]
+![npm Version](https://img.shields.io/npm/v/typesmith-lib?style=flat-square) ![GitHub top language](https://img.shields.io/github/languages/top/zetareticoli/typesmith?style=flat-square) ![npm Downloads](https://img.shields.io/npm/dt/typesmith-lib?logo=npm&style=flat-square)
 
 ## Installation
 
