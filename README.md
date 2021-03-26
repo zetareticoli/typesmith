@@ -7,8 +7,6 @@ Responsive typography system
 
 ### Install via NPM
 
-[![NPM](https://nodei.co/npm/typesmith-lib.png?compact=true)](https://npmjs.org/package/typesmith-lib)
-
 ```bash
 npm install --save typesmith-lib`
 ```
