@@ -1,7 +1,7 @@
 # typesmith
 Responsive typography system
 
-![NPM Downloads](https://img.shields.io/npm/dw/:typesmithib)
+![NPM Downloads](https://img.shields.io/npm/dt/typesmith-lib?logo=npm)
 
 ## Installation
 
