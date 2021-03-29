@@ -9,10 +9,16 @@
 
 @import '../_typesmith.scss';
 
-// Loop throught types map printing classnames based on type names to enable classes
+// Set vertical rhythm
+
+$rhythm: ratio;
+
+/// Loop throught types map printing classnames based on type names to enable classes
+///
+/// @param {String} $rhythm - The vertical rhythm condition - Must be 'baseline' or 'ratio'
 
 @each $type, $sizes in $types {
   .type-#{$type} {
-    @include type-size($type, medium, ratio)
+    @include type-size($type, medium, $rhythm)
   }
 }
