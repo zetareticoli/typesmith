@@ -1,3 +1,5 @@
+![typesmith cover](cover.png)
+
 # typesmith
 Responsive typography system
 
