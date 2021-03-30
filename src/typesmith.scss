@@ -4,7 +4,7 @@
 // DEPENDENCIES
 // ========================================================================
 
-// Import mq library in order to compile css files that work
+// Import 'sass-mq-lib' for breakpoints
 
 @import '../node_modules/sass-mq-lib/mq.scss';
 
@@ -12,16 +12,22 @@
 // Customize your Typesmith installation
 // ========================================================================
 
-// 1. Enable typesmith classes
+// 1. Enable Typesmith classes
 
 $typesmith-classes: true;
 
-// 2. Set vertical rhythm
+// 2. Set vertical rhythm - ratio | baseline - default values are located in _settings.scss
+// You can override them declaring project's custom values in a separated settings file
 
-$rhythm: ratio;
+$rhythm: baseline;
+
+// 3. Define on which media-query change font-size
+// Accepted values: small, medium , large, xlarge
+
+$bp: medium;
 
 // LIBRARY
-// Import typesmith settings and tools
+// Import Typesmith library
 // ========================================================================
 
 @import '../_typesmith-lib.scss';

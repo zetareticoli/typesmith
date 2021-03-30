@@ -5,7 +5,7 @@
 
 .type-canon {
   font-size: 2rem;
-  line-height: calc(1em * var(--ratio));
+  line-height: calc(1em + var(--baseline));
 }
 
 @media screen and (min-width: 740px) {
@@ -16,7 +16,7 @@
 
 .type-doublepica {
   font-size: 1.75rem;
-  line-height: calc(1em * var(--ratio));
+  line-height: calc(1em + var(--baseline));
 }
 
 @media screen and (min-width: 740px) {
@@ -27,7 +27,7 @@
 
 .type-paragon {
   font-size: 1.625rem;
-  line-height: calc(1em * var(--ratio));
+  line-height: calc(1em + var(--baseline));
 }
 
 @media screen and (min-width: 740px) {
@@ -38,30 +38,30 @@
 
 .type-columbian {
   font-size: 1.5rem;
-  line-height: calc(1em * var(--ratio));
+  line-height: calc(1em + var(--baseline));
 }
 
 .type-primer {
   font-size: 1.25rem;
-  line-height: calc(1em * var(--ratio));
+  line-height: calc(1em + var(--baseline));
 }
 
 .type-english {
   font-size: 1.125rem;
-  line-height: calc(1em * var(--ratio));
+  line-height: calc(1em + var(--baseline));
 }
 
 .type-pica {
   font-size: 1rem;
-  line-height: calc(1em * var(--ratio));
+  line-height: calc(1em + var(--baseline));
 }
 
 .type-brevier {
   font-size: 0.875rem;
-  line-height: calc(1em * var(--ratio));
+  line-height: calc(1em + var(--baseline));
 }
 
 .type-minion {
   font-size: 0.75rem;
-  line-height: calc(1em * var(--ratio));
+  line-height: calc(1em + var(--baseline));
 }

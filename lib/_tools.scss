@@ -29,7 +29,6 @@
   } @else {
     font-size: rem($size-base-px);
   }
-
   @if $rhythm != 'ratio' {
     line-height: calc(1em + var(--baseline));
   } @else {
@@ -44,7 +43,7 @@
 @if $typesmith-classes == true {
   @each $type, $sizes in $types {
     .type-#{$type} {
-      @include type-size($type, medium, $rhythm)
+      @include type-size($type, $bp, $rhythm)
     }
   }
 }
