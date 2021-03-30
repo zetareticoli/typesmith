@@ -1,0 +1,29 @@
+// TYPESMITH
+// @author Francesco Improta
+
+// DEPENDENCIES
+// ========================================================================
+
+// Import mq library in order to compile css files that work
+
+@import '../node_modules/sass-mq-lib/mq.scss';
+
+// SETTINGS
+// Customize your Typesmith installation
+// ========================================================================
+
+// 1. Enable typesmith classes
+
+$typesmith-classes: true;
+
+// 2. Set vertical rhythm
+
+$rhythm: ratio;
+
+// LIBRARY
+// Import typesmith settings and tools
+// ========================================================================
+
+@import '../_typesmith-lib.scss';
+
+

@@ -1,23 +1,24 @@
 // TYPESMITH TOOLS
 // @author Francesco Improta
 
-// Px to Rem
-// Convert any size expressed in 'px' to 'rem'
+/// Px to Rem
+/// Convert any size expressed in 'px' to 'rem'
 
 @function rem($value) {
   $rem-value: $value / $base-font-size;
   @return #{$rem-value}rem;
 }
 
-// Return type value from types map, specifying what $size you need
+/// Return type value from types map, specifying what $size you need
 
 @function type-size($type, $size) {
   @return map-get(map-get($types, $type), $size);
 }
 
-// Resposive type size based on type map values - media query is defined in it, not editable
+/// Resposive type size based on type map values - media query is defined in it, not editable
+/// @param {String} $rhythm - The vertical rhythm condition - Must be 'baseline' or 'ratio'
 
-@mixin type-size($type, $bp: medium, $ratio: 'ratio') {
+@mixin type-size($type, $bp: medium, $rhythm: 'ratio') {
   $size-small-px: type-size($type, small);
   $size-base-px: type-size($type, base);
   @if map-has-key(map-get($types, $type), small) {
@@ -29,9 +30,21 @@
     font-size: rem($size-base-px);
   }
 
-  @if $ratio != 'ratio' {
+  @if $rhythm != 'ratio' {
     line-height: calc(1em + var(--baseline));
   } @else {
     line-height: calc(1em * var(--ratio));
+  }
+}
+
+/// Loop throught types map printing classnames based on type names to enable classes
+///
+/// @param {String} $rhythm - The vertical rhythm condition - Must be 'baseline' or 'ratio'
+
+@if $typesmith-classes == true {
+  @each $type, $sizes in $types {
+    .type-#{$type} {
+      @include type-size($type, medium, $rhythm)
+    }
   }
 }

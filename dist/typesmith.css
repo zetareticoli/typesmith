@@ -1,57 +1,67 @@
-.canon {
+:root {
+  --baseline: 4px;
+  --ratio: 1.25;
+}
+
+.type-canon {
   font-size: 2rem;
-  line-height: calc(1em + 4px);
+  line-height: calc(1em * var(--ratio));
 }
 
 @media screen and (min-width: 740px) {
-  .canon {
+  .type-canon {
     font-size: 2.25rem;
   }
 }
 
-.doublepica {
+.type-doublepica {
   font-size: 1.75rem;
-  line-height: calc(1em + 4px);
+  line-height: calc(1em * var(--ratio));
 }
 
 @media screen and (min-width: 740px) {
-  .doublepica {
+  .type-doublepica {
     font-size: 2rem;
   }
 }
 
-.paragon {
+.type-paragon {
   font-size: 1.625rem;
-  line-height: calc(1em + 4px);
+  line-height: calc(1em * var(--ratio));
 }
 
 @media screen and (min-width: 740px) {
-  .paragon {
+  .type-paragon {
     font-size: 1.75rem;
   }
 }
 
-.columbian {
+.type-columbian {
   font-size: 1.5rem;
-  line-height: calc(1em + 4px);
+  line-height: calc(1em * var(--ratio));
 }
 
-.primer {
+.type-primer {
   font-size: 1.25rem;
-  line-height: calc(1em + 4px);
+  line-height: calc(1em * var(--ratio));
 }
 
-.pica {
+.type-english {
+  font-size: 1.125rem;
+  line-height: calc(1em * var(--ratio));
+}
+
+.type-pica {
   font-size: 1rem;
-  line-height: calc(1em + 4px);
+  line-height: calc(1em * var(--ratio));
 }
 
-.brevier {
+.type-brevier {
   font-size: 0.875rem;
-  line-height: calc(1em + 4px);
+  line-height: calc(1em * var(--ratio));
 }
 
-.minion {
+.type-minion {
   font-size: 0.75rem;
-  line-height: calc(1em + 4px);
+  line-height: calc(1em * var(--ratio));
 }
