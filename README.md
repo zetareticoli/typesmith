@@ -1,27 +1,74 @@
 # typesmith
-Responsive typography system
+Responsive Typography Library
 
 ## Installation
 
-### Install via NPM
+Install via NPM
 
 ```bash
 npm i --save typesmith-lib`
 ```
 
+Import Typesmith in your project:
+
 ```scss
-// your-project/style.scss
-@import 'node_modules/mq/mq';
-@import 'node_modules/typesmith/typesmith';
+// style.scss
+@import 'node_modules/typesmith-lib/_typesmith-lib';
+
+```
+## Usage
+
+You can use Typesmith in two different ways:
+
+1. Using `@type-size` mixin in a selector:
+
+```scss
+.foo {
+  @mixin type-size(canon, medium, ratio)
+}
+
 ```
 
-### Manual
+2. Use default Typesmith classes in HTML:
 
-#### Using @import
-Download the `_typesmith.scss` file and move it in your sass/scss folder. You need a Sass `@import` to include it in your project. Choose this way in order to customize **typesmith** according to project needs.
+```html
 
-#### Add CSS files
-Download the files located in /dist/ folder choosing between default or minified version. Include them in your project as normal CSS files. In this case you couldn't customize typography values but use those by default.
+<h1 class="type-canon">This is a Headline</h1>
+
+```
+## Customizations
+### 1. Vertical Rhythm
+
+Typesmith comes with two default options for vertical rhythm:
+
+- baseline - 4px
+- ratio - 1.25
+  
+You can customize the vertical rhythm **setting your own custom properties**:
+
+```css
+
+@import '_typesmith.scss'
+
+:root {
+  --baseline: foo; /* Use size values in px or rem */
+  --ratio: bar; /* Use a number value, like 1 or 1.5 */
+}
+```
+### 2. Breakpoints
+You can control the media-query for three type sizes: Canon, Double Pica, Paragon.
+
+Set the `$bp` variable before the `@import` statement like following:
+
+```scss
+// Accepted values: small, medium , large, xlarge
+
+$bp: large;
+
+@import '../_typesmith-lib.scss';
+```
+
+See [typesmit.scss](src/typesmith.scss) file as example.
 
 ## Dependencies
 I order to use the libary you will need following tools:
