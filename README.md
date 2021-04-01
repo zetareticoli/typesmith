@@ -21,6 +21,8 @@ The **type sizes names** come from traditional English speaking world:
 
 It uses a custom **Type Scale** starting from the Major Second scale (1.125) rounding up numbers to work well with a 4px baseline. Canon, Double Pica and Paragon have responsive sizes only. This is because only the first three sizes used for headlines need to change.
 
+CodePen Demo (baseline version): https://codepen.io/zetareticoli/pen/vYgxBYG?editors=1100
+
 ## Installation
 
 Install via NPM
