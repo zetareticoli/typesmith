@@ -53,7 +53,7 @@ You can use Typesmith in two different ways:
 ## Customizations
 ### 1. Vertical Rhythm
 
-Typesmith comes with two default options for vertical rhythm:
+There are two option for vertical rhythm:
 
 - baseline - 4px
 - ratio - 1.25
@@ -89,6 +89,9 @@ Breakpoints values are defined in [mq](/node_modules/sass-mq-lib/_mq.scss).
 ## Dependencies
 I order to use the libary you will need following tools:
 - [mq](https://github.com/zetareticoli/mq)
+
+## Author
+[Francesco Improta](https://www.francescoimprota.com)
 
 ## License
 MIT License
