@@ -1,6 +1,23 @@
 # typesmith
 Responsive Typography Library
 
+## What is Typesmith
+
+Typesmith is a **typography library designed for the responsive web**. It provides **a set of type sizes** defined in `px` to better align with your design tools (Figma, Sketc, etc.). 
+
+The **type sizes names** come from traditional English speaking world:
+- Canon *32/36* 
+- Double Pica *28/32*
+- Paragon *26/28*
+- Columbian *24*
+- Primer *20*
+- English *18*
+- Pica *16*
+- Brevier *14*
+- Minion *12*
+
+It uses a custom **Type Scale** starting from the Major Second scale (1.125) rounding up numbers to work well with a 4px baseline. Canon, Double Pica and Paragon have responsive sizes only. This is because only the first three sizes used for headlines need to change.
+
 ## Installation
 
 Install via NPM
@@ -22,20 +39,17 @@ You can use Typesmith in two different ways:
 
 1. Using `@type-size` mixin in a selector:
 
-```scss
-.foo {
-  @mixin type-size(canon, medium, ratio)
-}
-
-```
+    ```scss
+      .foo {
+        @mixin type-size(canon, medium, ratio)
+      }
+    ```
 
 2. Use default Typesmith classes in HTML:
 
-```html
-
-<h1 class="type-canon">This is a Headline</h1>
-
-```
+    ```html
+    <h1 class="type-canon">This is a Headline</h1>
+    ```
 ## Customizations
 ### 1. Vertical Rhythm
 
@@ -69,6 +83,8 @@ $bp: large;
 ```
 
 See [typesmit.scss](src/typesmith.scss) file as example.
+
+Breakpoints values are defined in [mq](/node_modules/sass-mq-lib/_mq.scss).
 
 ## Dependencies
 I order to use the libary you will need following tools:
