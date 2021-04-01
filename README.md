@@ -1,37 +1,100 @@
 ![typesmith cover](cover.png)
 
 # typesmith
-Responsive typography system
 
 ![npm Version](https://img.shields.io/npm/v/typesmith-lib?style=flat-square) ![GitHub top language](https://img.shields.io/github/languages/top/zetareticoli/typesmith?style=flat-square) ![npm Downloads](https://img.shields.io/npm/dt/typesmith-lib?logo=npm&style=flat-square)
 
+## What is typesmith
+
+Typesmith is a **typography library designed for the responsive web**. It provides **a set of type sizes** defined in `px` to better align with your design tools (Figma, Sketc, etc.). 
+
+The **type sizes names** come from traditional English speaking world:
+- Canon *32/36* 
+- Double Pica *28/32*
+- Paragon *26/28*
+- Columbian *24*
+- Primer *20*
+- English *18*
+- Pica *16*
+- Brevier *14*
+- Minion *12*
+
+It uses a custom **Type Scale** starting from the Major Second scale (1.125) rounding up numbers to work well with a 4px baseline. Canon, Double Pica and Paragon have responsive sizes only. This is because only the first three sizes used for headlines need to change.
+
 ## Installation
 
-### Install via NPM
+Install via NPM
 
 ```bash
-npm install --save typesmith-lib`
+npm i --save typesmith-lib`
 ```
+
+Import Typesmith in your project:
 
 ```scss
-// your-project/style.scss
-@import 'node_modules/mq/mq';
-@import 'node_modules/typesmith/typesmith';
+// style.scss
+@import 'node_modules/typesmith-lib/_typesmith-lib';
+
+```
+## Usage
+
+You can use typesmith in two different ways:
+
+1. Using `@type-size` mixin in a selector:
+
+    ```scss
+      .foo {
+        @mixin type-size(canon, medium, ratio)
+      }
+    ```
+
+2. Use default typesmith classes in HTML:
+
+    ```html
+    <h1 class="type-canon">This is a Headline</h1>
+    ```
+## Customizations
+### 1. Vertical Rhythm
+
+There are two option for vertical rhythm:
+
+- baseline - 4px
+- ratio - 1.25
+  
+You can customize the vertical rhythm **setting your own custom properties**:
+
+```css
+
+@import '_typesmith.scss'
+
+:root {
+  --baseline: foo; /* Use size values in px or rem */
+  --ratio: bar; /* Use a number value, like 1 or 1.5 */
+}
+```
+### 2. Breakpoints
+You can control the media-query for three type sizes: Canon, Double Pica, Paragon.
+
+Set the `$bp` variable before the `@import` statement like following:
+
+```scss
+// Accepted values: small, medium , large, xlarge
+
+$bp: large;
+
+@import '../_typesmith-lib.scss';
 ```
 
-### Install manually
+See [typesmit.scss](src/typesmith.scss) file as example.
 
-#### Using @import
-Download the _typesmith.scss file and move it in your sass/scss folder. You need a Sass @import to include it in your project.
-
-#### Add CSS file
-Download the file located in /dist/ folder choosing between default or minified version. Include in your project as normal CSS file.
-
+Breakpoints values are defined in [mq](/node_modules/sass-mq-lib/_mq.scss).
 
 ## Dependencies
 I order to use the libary you will need following tools:
 - [mq](https://github.com/zetareticoli/mq)
 
+## Author
+[Francesco Improta](https://www.francescoimprota.com)
 
 ## License
 MIT License
