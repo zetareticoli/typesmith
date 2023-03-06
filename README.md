@@ -1,12 +1,10 @@
 ![typesmith cover](cover.png)
 
-# typesmith
-
 ![npm Version](https://img.shields.io/npm/v/typesmith-lib?style=flat-square) ![GitHub top language](https://img.shields.io/github/languages/top/zetareticoli/typesmith?style=flat-square) ![npm Downloads](https://img.shields.io/npm/dt/typesmith-lib?logo=npm&style=flat-square)
 
-## What is typesmith
+## What is Typesmith
 
-Typesmith is a **typography library designed for the responsive web**. It provides **a set of type sizes** defined in `px` to better align with your design tools (Figma, Sketc, etc.). 
+Typesmith is a **typography library** designed for the responsive web. It provides **a set of type sizes** defined in `px` to better align with your design tools (Figma, Sketc, etc.). 
 
 The **type sizes names** come from traditional English speaking world:
 - Canon *32/36* 
@@ -19,9 +17,13 @@ The **type sizes names** come from traditional English speaking world:
 - Brevier *14*
 - Minion *12*
 
-It uses a custom **Type Scale** starting from the Major Second scale (1.125) rounding up numbers to work well with a 4px baseline. Canon, Double Pica and Paragon have responsive sizes only. This is because only the first three sizes used for headlines need to change.
+It uses a custom **Type Scale** starting from the Major Second scale (1.125) rounding up numbers to work well with a 4px baseline. 
 
-CodePen Demo (baseline version): https://codepen.io/zetareticoli/pen/vYgxBYG?editors=1100
+Canon, Double Pica and Paragon have responsive sizes only. 
+
+This is because only the first three sizes used for headlines need to change.
+
+A demo of the "baseline version" is available on [CodePen](https://codepen.io/zetareticoli/pen/vYgxBYG?editors=1100)
 
 ## Installation
 
